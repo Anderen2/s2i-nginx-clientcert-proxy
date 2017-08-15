@@ -38,6 +38,7 @@ RUN chown -R 1001:1001 /var/lib/nginx
 RUN chown -R 1001:1001 /etc/nginx
 RUN chmod 777 /etc/nginx
 RUN chmod 777 /etc/nginx/nginx.conf
+RUN chmod -R 777 /var/log/nginx
 RUN touch /run/nginx.pid
 RUN chown -R 1001:1001 /run/nginx.pid
 
